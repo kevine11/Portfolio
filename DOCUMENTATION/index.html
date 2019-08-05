@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>EPIC HTML Template</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<!--For Moving Top Starts -->
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+(function($){
+	$(document).ready(function() {
+	$("a.anchorLink").anchorAnimate()
+});
+
+jQuery.fn.anchorAnimate = function(settings) {
+
+ 	settings = jQuery.extend({
+		speed : 800
+	}, settings);	
+	
+	return this.each(function(){
+		var caller = this
+		$(caller).click(function (event) {	
+			event.preventDefault()
+			var locationHref = window.location.href
+			var elementClick = $(caller).attr("href")			
+			var destination = $(elementClick).offset().top;
+			$("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
+				window.location.hash = elementClick
+			});
+			
+		  	return false;
+		})
+	})
+}
+})(jQuery); 
+</script>
+<!--For Moving Top Ends -->
+
+
+<!--Cufon Starts -->
+<script type='text/javascript' src='js/cufon-yui.js'></script>
+<script type="text/javascript" src="js/Museo_300_300.font.js"></script>
+<script type="text/javascript">    
+       	Cufon.replace('h3'); 
+		Cufon.replace('h2'); 
+		Cufon.replace('p.ques');  
+    </script>	
+</head><body>
+<!--Main Container Starts -->
+<div id="maincontainer_wrap">
+	<div id="maincontainer">
+		<div class="top">
+			<a href="http://localhost/tf/oneweek/wp/help"><img src="images/logo.jpg" alt="" /></a>
+		</div>
+	
+		<div class="text">
+			<h3>
+						</h3>
+		</div>
+	<br class="spacer" />
+	</div>	
+</div>
+<!--Main Container Ends -->
+
+<!--Main BODY Starts -->
+<div class="body_wrap">
+	<div class="bodyarea">
+		<!-- LEFTBODY STARTS -->
+		<div class="leftbody">
+			<h3 class="headingtype1">EPIC HTML Template</h3>
+			<ul>
+						<li><a class="anchorLink" href="#1242">1 Overview</a></li>
+						<li><a class="anchorLink" href="#1244">2 Installation</a></li>
+						<li><a class="anchorLink" href="#1247">3 Support</a></li>
+						<li><a class="anchorLink" href="#1249">4 General Structure</a></li>
+						<li><a class="anchorLink" href="#1251">4.1 Home Slider</a></li>
+						<li><a class="anchorLink" href="#1253">4.2 Main Menu</a></li>
+						<li><a class="anchorLink" href="#1255">4.3 About</a></li>
+						<li><a class="anchorLink" href="#1257">4.3.1 Our Team</a></li>
+						<li><a class="anchorLink" href="#1259">4.3.2 Our Statistic</a></li>
+						<li><a class="anchorLink" href="#1261">4.4 Services</a></li>
+						<li><a class="anchorLink" href="#1264">4.5 Portfolio</a></li>
+						<li><a class="anchorLink" href="#1266">4.6 Contact</a></li>
+						<li><a class="anchorLink" href="#1268">4.7 Parallax and Twitter</a></li>
+						<li><a class="anchorLink" href="#1270">4.8 Blog</a></li>
+						<li><a class="anchorLink" href="#1318">4.8.1 Blog Slider</a></li>
+						<li><a class="anchorLink" href="#1385">4.8.2 Blog Post Comment</a></li>
+						<li><a class="anchorLink" href="#1272">4.9 Footer</a></li>
+						<li><a class="anchorLink" href="#1274">4.9.1 Subscribe</a></li>
+						<li><a class="anchorLink" href="#1276">4.9.2 Footer Slider</a></li>
+						<li><a class="anchorLink" href="#1280">5 Responsive CSS</a></li>
+						<li><a class="anchorLink" href="#1282">6 Credits</a></li>
+						</ul>
+			<div style="height:300px;">&nbsp;</div>
+		</div>
+		<!-- LEFTBODY ENDS -->
+		
+		<!-- RIGHTBODY STARTS -->
+		<div class="rightbody"  id="top">
+			<div id="introduction">				
+			</div>
+			
+							<!-- CONTENT POST STARTS -->
+				<div class="content" id="1242">
+					<h2>1 Overview</h2>
+					Before we start, lets take a look on the folder structure of the theme. All theme files are placed in the HTML folder. The main HTML folder consists of 3 more folders for diferent types of theme assets:
+<ol>
+	<li>images - contaning all images for the theme design</li>
+	<li>js -containing all scripts for the jquery effects</li>
+	<li>css - containing all CSS files for the theme</li>
+	<li>twitter - contain php file for twitter configuration</li>
+</ol>					<p class="divider"><a href="#top" class="anchorLink">Top</a></p>
+				
+				</div>
+				<!-- CONTENT POST ENDS -->
+							<!-- CONTENT POST STARTS -->
+				<div class="content" id="1244">
+					<h2>2 Installation</h2>
+					This is an HTML theme and doesn't require instalation in the traditional meaning of the word. You only need to place the content (HTML files and the three folders) in your prefered web directory
+
+Keep in mind that the folder structure and file/folder names are important for the correct theme work					<p class="divider"><a href="#top" class="anchorLink">Top</a></p>
+				
+				</div>
+				<!-- CONTENT POST ENDS -->
+							<!-- CONTENT POST STARTS -->
+				<div class="content" id="1247">
+					<h2>3 Support</h2>
+					Once again, We thank you for purchasing this html template. We would be glad to help you if you have any questions relating to this html template. No guarantees, but We will do best on our part to assist you in every possible way. If you have a more general question relating to the html template on ThemeForest, you might consider visiting the forums and asking your question in the "<a href="http://themeforest/user/wpamanuke?ref=wpamanuke">Item Discussion</a>" section. Thanks and Regards <a href="http://themeforest/user/wpamanuke?ref=wpamanuke">wpamanuke</a>					<p class="divider"><a href="#top" class="anchorLink">Top</a></p>
+				
+				</div>
+				<!-- CONTENT POST ENDS -->
+							<!-- CONTENT POST STARTS -->
+				<div class="content" id="1249">
+					<h2>4 General Structure</h2>
+					These are the general structure of the html :
+
+<img class="alignnone size-full wp-image-1287" alt="layout_1" src="images/layout_1.png" width="500" height="600" />
+
+<img class="alignnone size-full wp-image-1289" alt="layout_2" src="images/layout_2.png" width="500" height="600" />
+
+&nbsp;
+
+<h3 class="headingtype1">Javascript Which can be modified</h3>
+<ul>
+	<li>js/custom.js</li>
+	<li>js/custom_single.js</li>
+</ul>					<p class="divider"><a href="#top" class="anchorLink">Top</a></p>
+				
+				</div>
+				<!-- CONTENT POST ENDS -->
+							<!-- CONTENT POST STARTS -->
+				<div class="content" id="1251">
+					<h2>4.1 Home Slider</h2>
+					<img class="alignnone size-full wp-image-1338" alt="slider" src="images/slider.png" width="1349" height="498" />
+
+<h3 class="headingtype1"> To Use Home Slider you must including the following script </h3>
+<ul>
+	<li>js/jquery-1.9.1.min.js</li>
+	<li>js/jquery.cycle2.min.js</li>
+	<li>js/jquery.cycle2.center.min.js</li>
+</ul>
+<h3 class="headingtype1"> Finally you need to hook up your script </h3>
+
+<img class="alignnone size-full wp-image-1296" alt="home_slider" src="images/home_slider.png" width="660" height="577" />
+
+<img class="alignnone size-full wp-image-1302" alt="home_slider_2" src="images/home_slider_2.png" width="551" height="332" />					<p class="divider"><a href="#top" class="anchorLink">Top</a></p>
+				
+				</div>
+				<!-- CONTENT POST ENDS -->
+							<!-- CONTENT POST STARTS -->
+				<div class="content" id="1253">
+					<h2>4.2 Main Menu</h2>
+					<a href="images/menu.png"><img class="alignnone size-full wp-image-1335" alt="menu" src="images/menu.png" width="1191" height="72" /></a>
+
+<h3 class="headingtype1"> To Use Main Menu you must including the following script </h3>
+<ul>
+	<li> js/jquery-1.9.1.min.js</li>
+	<li>js/jquery.nav.js</li>
+	<li>js/jquery.sticky.js</li>
+	<li>js/jquery.dlmenu.js (for mobile menu version)</li>
+</ul>
+<h3 class="headingtype1"> Finally you need to hook up your script </h3>
+
+<a href="images/menu_code_1.png"><img class="alignnone size-full wp-image-1401" alt="menu_code_1" src="images/menu_code_1.png" width="574" height="521" /></a>
+
+<a href="images/menu_code_2.png"><img class="alignnone size-full wp-image-1402" alt="menu_code_2" src="images/menu_code_2.png" width="530" height="456" /></a>
+
+<a href="images/menu_code_3.png"><img class="alignnone size-full wp-image-1403" alt="menu_code_3" src="images/menu_code_3.png" width="722" height="183" /></a>
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;					<p class="divider"><a href="#top" class="anchorLink">Top</a></p>
+				
+				</div>
+				<!-- CONTENT POST ENDS -->
+							<!-- CONTENT POST STARTS -->
+				<div class="content" id="1255">
+					<h2>4.3 About</h2>
+										<p class="divider"><a href="#top" class="anchorLink">Top</a></p>
+				
+				</div>
+				<!-- CONTENT POST ENDS -->
+							<!-- CONTENT POST STARTS -->
+				<div class="content" id="1257">
+					<h2>4.3.1 Our Team</h2>
+					<img class="alignnone size-full wp-image-1342" alt="our_team" src="images/our_team.png" width="615" height="493" />
+
+<h3 class="headingtype1"> To Use Our Team you must including the following script </h3>
+<ul>
+	<li>js/jquery-1.9.1.min.js</li>
+</ul>
+<h3 class="headingtype1"> Finally you need to hook up your script </h3>
+
+<img class="alignnone size-full wp-image-1300" alt="team" src="images/team.png" width="959" height="397" />					<p class="divider"><a href="#top" class="anchorLink">Top</a></p>
+				
+				</div>
+				<!-- CONTENT POST ENDS -->
+							<!-- CONTENT POST STARTS -->
+				<div class="content" id="1259">
+					<h2>4.3.2 Our Statistic</h2>
+					&nbsp;
+
+<img class="alignnone size-full wp-image-1344" alt="our_statistic" src="images/our_statistic.png" width="925" height="359" />
+
+<h3 class="headingtype1">HTML Code </h3>
+
+<img class="alignnone size-full wp-image-1324" alt="statistic" src="images/statistic.png" width="574" height="593" />
+
+&nbsp;
+
+&nbsp;					<p class="divider"><a href="#top" class="anchorLink">Top</a></p>
+				
+				</div>
+				<!-- CONTENT POST ENDS -->
+							<!-- CONTENT POST STARTS -->
+				<div class="content" id="1261">
+					<h2>4.4 Services</h2>
+					<img class="alignnone size-full wp-image-1348" alt="main_services" src="images/main_services.png" width="914" height="420" />
+
+<h3 class="headingtype1">HTML Code</h3>
+<img class="alignnone size-full wp-image-1326" alt="service" src="images/service.png" width="759" height="235" />					<p class="divider"><a href="#top" class="anchorLink">Top</a></p>
+				
+				</div>
+				<!-- CONTENT POST ENDS -->
+							<!-- CONTENT POST STARTS -->
+				<div class="content" id="1264">
+					<h2>4.5 Portfolio</h2>
+					<img class="alignnone size-full wp-image-1361" alt="portofolio" src="images/portofolio.png" width="738" height="527" />
+
+<h3 class="headingtype1"> To Use Portfolio you must including the following script </h3>
+<ul>
+	<li>js/jquery-1.9.1.min.js</li>
+</ul>
+<h3 class="headingtype1"> Finally you need to hook up your script </h3>
+
+<img class="alignnone size-full wp-image-1312" alt="portfolio" src="images/portfolio.png" width="644" height="602" />					<p class="divider"><a href="#top" class="anchorLink">Top</a></p>
+				
+				</div>
+				<!-- CONTENT POST ENDS -->
+							<!-- CONTENT POST STARTS -->
+				<div class="content" id="1266">
+					<h2>4.6 Contact</h2>
+					<img class="alignnone size-full wp-image-1354" alt="contact" src="images/contact.png" width="937" height="515" />
+
+<h3 class="headingtype1">Javascript Code</h3>
+
+<img class="alignnone size-full wp-image-1321" alt="contact_1" src="images/contact_1.png" width="665" height="600" /><a href="images/contact_2.png"><img class="alignnone size-full wp-image-1322" alt="contact_2" src="images/contact_2.png" width="656" height="416" /></a>					<p class="divider"><a href="#top" class="anchorLink">Top</a></p>
+				
+				</div>
+				<!-- CONTENT POST ENDS -->
+							<!-- CONTENT POST STARTS -->
+				<div class="content" id="1268">
+					<h2>4.7 Parallax and Twitter</h2>
+					<h3 class="headingtype1">Parallax</h3>
+
+<h3 class="headingtype1">To Use Parallax you must including the following script </h3>
+<ul>
+	<li>js/jquery-1.9.1.min.js</li>
+	<li>js/jquery.parallax-1.1.3.js</li>
+</ul>
+<h3 class="headingtype1">Parallax JS Code</h3>
+
+&nbsp;
+
+<img class="alignnone size-full wp-image-1314" alt="parallax" src="images/parallax.png" width="324" height="104" />
+
+&nbsp;
+
+<h3 class="headingtype1">Twitter</h3>
+
+<img class="alignnone size-full wp-image-1356" alt="twitter_pic" src="images/twitter_pic.png" width="862" height="276" />
+
+<h3 class="headingtype1">Twitter PHP</h3>
+
+<img class="alignnone size-full wp-image-1352" alt="twitter_setting" src="images/twitter_setting.png" width="677" height="431" />
+
+<h3 class="headingtype1">Twitter JS</h3>
+
+<a href="images/twitter.png"><img class="alignnone size-full wp-image-1316" alt="twitter" src="images/twitter.png" width="1034" height="395" /></a>					<p class="divider"><a href="#top" class="anchorLink">Top</a></p>
+				
+				</div>
+				<!-- CONTENT POST ENDS -->
+							<!-- CONTENT POST STARTS -->
+				<div class="content" id="1270">
+					<h2>4.8 Blog</h2>
+										<p class="divider"><a href="#top" class="anchorLink">Top</a></p>
+				
+				</div>
+				<!-- CONTENT POST ENDS -->
+							<!-- CONTENT POST STARTS -->
+				<div class="content" id="1318">
+					<h2>4.8.1 Blog Slider</h2>
+					<img class="alignnone size-full wp-image-1359" alt="post_slider" src="images/post_slider.png" width="878" height="374" />
+
+<h3 class="headingtype1"> To Blog Slider you must including the following script </h3>
+<ul>
+	<li>js/jquery-1.9.1.min.js</li>
+	<li>js/jquery.cycle2.min.js</li>
+</ul>
+<h3 class="headingtype1">HTML Code</h3>
+
+<img class="alignnone size-full wp-image-1319" alt="blog_slider" src="images/blog_slider.png" width="508" height="440" />					<p class="divider"><a href="#top" class="anchorLink">Top</a></p>
+				
+				</div>
+				<!-- CONTENT POST ENDS -->
+							<!-- CONTENT POST STARTS -->
+				<div class="content" id="1385">
+					<h2>4.8.2 Blog Post Comment</h2>
+					<h3 class="headingtype1"> To Use Blog Comment you must including the following script </h3>
+<ul>
+	<li>js/jquery-1.9.1.min.js</li>
+	<li>js/jquery.validate.min.js</li>
+</ul>
+<h3 class="headingtype1"> Finally you need to hook up your script </h3>
+
+<a href="images/comment_code_1.png"><img class="alignnone size-full wp-image-1386" alt="comment_code_1" src="images/comment_code_1.png" width="345" height="410" /></a>
+
+<a href="images/comment_code_2.png"><img class="alignnone size-full wp-image-1387" alt="comment_code_2" src="images/comment_code_2.png" width="672" height="405" /></a>					<p class="divider"><a href="#top" class="anchorLink">Top</a></p>
+				
+				</div>
+				<!-- CONTENT POST ENDS -->
+							<!-- CONTENT POST STARTS -->
+				<div class="content" id="1272">
+					<h2>4.9 Footer</h2>
+										<p class="divider"><a href="#top" class="anchorLink">Top</a></p>
+				
+				</div>
+				<!-- CONTENT POST ENDS -->
+							<!-- CONTENT POST STARTS -->
+				<div class="content" id="1274">
+					<h2>4.9.1 Subscribe</h2>
+					<img class="alignnone size-full wp-image-1350" alt="newsletter" src="images/newsletter.png" width="342" height="308" />
+
+<h3 class="headingtype1"> To Use Subscribe, you must including the following script </h3>
+<ul>
+	<li> js/jquery-1.9.1.min.js</li>
+	<li>js/jquery.validate.min.js</li>
+</ul>
+<h3 class="headingtype1"> Finally you need to hook up your script </h3>
+
+<img class="alignnone size-full wp-image-1306" alt="email_subscribe" src="images/email_subscribe.png" width="652" height="538" />					<p class="divider"><a href="#top" class="anchorLink">Top</a></p>
+				
+				</div>
+				<!-- CONTENT POST ENDS -->
+							<!-- CONTENT POST STARTS -->
+				<div class="content" id="1276">
+					<h2>4.9.2 Footer Slider</h2>
+					<img class="alignnone size-full wp-image-1346" alt="our_client" src="images/our_client.png" width="607" height="295" />
+
+<h3 class="headingtype1"> To Use Footer Slider you must including the following script </h3>
+<ul>
+	<li> js/jquery-1.9.1.min.js</li>
+	<li>js/jquery.carouFredSel-6.2.1-packed.js</li>
+</ul>
+<h3 class="headingtype1"> Finally you need to hook up your script </h3>
+
+<img class="alignnone size-full wp-image-1304" alt="footer_slider" src="images/footer_slider.png" width="551" height="316" />					<p class="divider"><a href="#top" class="anchorLink">Top</a></p>
+				
+				</div>
+				<!-- CONTENT POST ENDS -->
+							<!-- CONTENT POST STARTS -->
+				<div class="content" id="1280">
+					<h2>5 Responsive CSS</h2>
+					<h3 class="headingtype1">Responsive CSS has been separated in 3 files</h3>
+
+<img class="alignnone size-full wp-image-1308" alt="css" src="images/css.png" width="474" height="78" />
+
+&nbsp;
+
+<h3 class="headingtype1"> media query which is used for every css </h3>
+
+<img class="alignnone size-full wp-image-1310" alt="css_2" src="images/css_2.png" width="474" height="212" />					<p class="divider"><a href="#top" class="anchorLink">Top</a></p>
+				
+				</div>
+				<!-- CONTENT POST ENDS -->
+							<!-- CONTENT POST STARTS -->
+				<div class="content" id="1282">
+					<h2>6 Credits</h2>
+					<strong>Credits :</strong>
+
+<strong>Icons and Images</strong>
+<ul>
+	<li>Icons : <a href="http://sixrevisions.com/freebies/icons/375-retina-display-ready-icons/">http://sixrevisions.com/freebies/icons/375-retina-display-ready-icons/</a></li>
+	<li>Images Previews : <a href="http://www.blender.org/features-gallery">http://www.blender.org/features-gallery</a> and <a href="http://www.elephantsdream.org/">http://www.elephantsdream.org/</a></li>
+	<li>Images Previews : http://photodune.com</li>
+</ul>
+<strong>Javascript :</strong>
+<ul>
+	<li>jQuery Validation Plugin: <a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/">http://bassistance.de/jquery-plugins/jquery-plugin-validation/</a></li>
+	<li>jQuery Cycle 2 : <a href="http://jquery.malsup.com/cycle2">http://jquery.malsup.com/cycle2</a></li>
+	<li>jQuery carouFredSel : <a href="http://caroufredsel.dev7studios.com/">http://caroufredsel.dev7studios.com/</a></li>
+	<li>jQuery dlMenu : <a href="http://www.jqueryscript.net/menu/jQuery-Responsive-Multi-Level-Menu-Plugin-Dlmenu.html">http://www.jqueryscript.net/menu/jQuery-Responsive-Multi-Level-Menu-Plugin-Dlmenu.html</a></li>
+	<li>jQuery Sticky : <a href="http://labs.anthonygarand.com/sticky">http://labs.anthonygarand.com/sticky</a></li>
+	<li>jQuery One Page Nav : <a href="https://github.com/davist11/jQuery-One-Page-Nav">https://github.com/davist11/jQuery-One-Page-Nav</a></li>
+	<li>Thumbnail Grid With Expanding Preview : <a href="http://tympanus.net/codrops/2013/03/19/thumbnail-grid-with-expanding-preview/">http://tympanus.net/codrops/2013/03/19/thumbnail-grid-with-expanding-preview/</a></li>
+</ul>					<p class="divider"><a href="#top" class="anchorLink">Top</a></p>
+				
+				</div>
+				<!-- CONTENT POST ENDS -->
+					</div>
+		<!-- RIGHTBODY ENDS -->
+		
+	</div>
+</div>
+<!--Main BODY Ends -->
+
+
+</div>
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		</body>
+</html>

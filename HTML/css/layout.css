@@ -44,6 +44,7 @@ TABLE OF CONTENTS
 	margin: 0 auto;
 	width: 1200px;
 }
+
 .container_12 .grid_2 {
 	width:170px;
 	margin:0 15px;
@@ -222,18 +223,21 @@ ENDS 02. TYPOGRAPHY
 	width:100%;
 	background-color:rgba(0,0,0,0.5);
 	height:100%;
+	
 }	
 #id_home .slide {
 	height:600px;
 	z-index:1;
+	
 }
 #id_home .slider {
 	height: auto;
 	width:100%;
 	
+	
 }
 #id_home .slider img {
-   
+	
 }
 #id_home div.center{
 	width:100%;
@@ -271,6 +275,14 @@ ENDS 02. TYPOGRAPHY
 #id_home p {
 	color:#dddddd;
 	font-size:18px;
+}
+.slide1 {
+	background-repeat: no-repeat;
+	/* width: 100%; */
+	background-size: 720px 500px;
+	align-items: center;
+	padding-left: 500px;
+	padding-bottom: 200px
 }
 /***********************************************************************************************
 ENDS 03.HOME
@@ -430,6 +442,8 @@ ENDS 04. MENU
 
 .div_team  img{
 	margin-bottom:24px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .h3_team {
 	font-size:17px;
@@ -853,13 +867,13 @@ ENDS 05. ABOUT
 */
 
 #paralax_1{
-	background:url(../images/slider/paralax_1.jpg) 50% -700px;
+	background:url(../images/Pictures/Port11) 100% ;
 	color: white;
 	height: 375px;
 	margin: 0 auto;
 	padding: 0;
 	background-color:#000000;
-	 background-attachment: fixed;
+	background-attachment: fixed;
     background-repeat: no-repeat;
     overflow: hidden;
     text-align: center;
@@ -877,7 +891,7 @@ ENDS 05. ABOUT
     text-align: center;
 }
 #paralax_3{
-	background:url(../images/slider/paralax_3.jpg) 50% -300px no-repeat fixed;
+	background:url(../images/Pictures/Port12) 50% -300px no-repeat fixed;
 	color: white;
 	height: 375px;
 	margin: 0 auto;
